@@ -1,7 +1,7 @@
-from rest_framework import serializers 
+from rest_framework import serializers
 from .models import BlogPost
 
 class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = BlogPost
-        fieds = ["id","title","content", "published_date"]
+        fields = ["id","title","content", "published_date"]
