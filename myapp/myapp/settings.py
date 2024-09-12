@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "api",
     'rest_framework',
+    'rest_framework.authtoken', # required for custum sign-up instead using django's in-build sign-up
     'django_filters',
 ]
 REST_FRAMEWORK = {
@@ -93,7 +94,7 @@ DATABASES = {
 #         'USER': os.getenv('DB_USR'),
 #         'PASSWORD': os.getenv('DB_PWD'),
 #         'HOST': 'localhost',
-#         'POST': '5432'
+#         'PORT': '5432'
 #     }
 # }
 
