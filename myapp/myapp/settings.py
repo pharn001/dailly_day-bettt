@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "api",
     'rest_framework',
     'rest_framework.authtoken', # required for custum sign-up instead using django's in-build sign-up
-    'django_filters',
+    'django_filters',    
+    # 'accounts',
 ]
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
@@ -87,6 +88,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+AUTH_USER_MODEL = 'api.BlogPost'
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',

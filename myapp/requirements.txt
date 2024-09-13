@@ -56,3 +56,5 @@ django
 djangorestframework
 environs
 mysqlclient
+site-packages (2024.1)
+site-packages (0.5.1)

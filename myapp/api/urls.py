@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from .views import RegisterUserView
 urlpatterns =[
-    path("blogposts/", views.BlogPostListCreate.as_view(), name="blogpost-view-create"),
-    path("blogposts/<int:pk>", views.BlogPostRetrieveUpdateDestory.as_view(), name="update"),
+    path("register/", RegisterUserView.as_view(), name="register"),
+
+    # path("blogposts/<int:pk>", views.BlogPostRetrieveUpdateDestory.as_view(), name="update"),
 ]
